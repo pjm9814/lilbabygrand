@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lil Baby Grand</title>
+  <meta name="description" content="Lil Baby Grand — pianist and producer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000;
+      --text: #f2f2f2;
+      --muted: #8a8a8a;
+      --frame: #f4f1ea;
+    }
+
+    * { box-sizing: border-box; margin: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--muted); }
+
+    .caps {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 11px;
+    }
+
+    /* Home: one framed photo, three links */
+    .home {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 9vh;
+      padding: 10vh 16px 6vh;
+    }
+
+    .frame {
+      background: var(--frame);
+      padding: 12px 12px 44px;
+      width: min(440px, 78vw);
+      opacity: 0;
+      animation: fade 1.6s ease 0.3s forwards;
+    }
+    .frame img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+
+    @keyframes fade { to { opacity: 1; } }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      width: min(640px, 100%);
+    }
+
+    /* Sections */
+    section {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 14vh 16px 0;
+    }
+    section h2 { color: var(--muted); font-weight: 400; margin-bottom: 2rem; }
+
+    .platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.75rem;
+      margin-top: 1.5rem;
+    }
+
+    iframe { display: block; width: 100%; border: 0; border-radius: 12px; }
+
+    .about p + p { margin-top: 1rem; }
+    .about a { border-bottom: 1px solid var(--muted); }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 16vh 16px 3rem;
+      color: var(--muted);
+    }
+    footer .social { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; color: var(--text); }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="home">
+      <div class="frame">
+        <!-- Placeholder: Spotify artist image. Swap for your own photo, e.g. <img src="photo.jpg" ...> -->
+        <img src="https://i.scdn.co/image/ab676161000051741bfca3f3deed47427d2351ab" alt="Lil Baby Grand">
+      </div>
+      <nav class="nav caps">
+        <a href="#music">Music</a>
+        <a href="#video">Video</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <section id="music">
+      <h2 class="caps">Music</h2>
+      <iframe src="https://open.spotify.com/embed/artist/18Cgc3wh2bCEW8HzEz3db3?utm_source=generator&amp;theme=0" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Lil Baby Grand on Spotify"></iframe>
+      <div class="platforms caps">
+        <a href="https://open.spotify.com/artist/18Cgc3wh2bCEW8HzEz3db3">Spotify</a>
+        <a href="https://music.apple.com/us/artist/lil-baby-grand/1564847643">Apple Music</a>
+        <a href="https://music.amazon.com/artists/B093SSXD9R">Amazon</a>
+        <a href="https://listen.tidal.com/artist/24626978/">Tidal</a>
+        <a href="https://soundcloud.com/lilbabygrand">SoundCloud</a>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2 class="caps">Video</h2>
+      <!-- Swap in a featured video: <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" style="aspect-ratio:16/9" allowfullscreen title="..."></iframe> -->
+      <p><a class="caps" href="https://youtube.com/channel/UCK6FF8pkp-vK4VMCquYP3rQ">Watch on YouTube &rarr;</a></p>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="caps">About</h2>
+      <p>Lil Baby Grand is the project of pianist and producer Peter Marshall, best known for piano reimaginings of Latin music, from &ldquo;Yonaguni&rdquo; to &ldquo;DtMF.&rdquo;</p>
+      <p>His work includes &ldquo;MONSTRUO&rdquo; with Tainy and Feid, and co-writing and co-production credits on Tainy&rsquo;s Grammy-nominated album <i>DATA</i>.</p>
+      <p>Off the keys, he&rsquo;s a PhD student at NYU Stern, studying creativity and the music industry. <a href="https://pjm9814.github.io/">Research &rarr;</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social caps">
+      <a href="https://www.instagram.com/lilbabygrand">Instagram</a>
+      <a href="https://www.tiktok.com/@lilbabygrand/">TikTok</a>
+      <a href="https://youtube.com/channel/UCK6FF8pkp-vK4VMCquYP3rQ">YouTube</a>
+      <a href="https://open.spotify.com/artist/18Cgc3wh2bCEW8HzEz3db3">Spotify</a>
+    </div>
+    <div class="caps">&copy; 2026 Lil Baby Grand</div>
+  </footer>
+</body>
+</html>
