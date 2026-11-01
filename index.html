@@ -81,9 +81,12 @@
     }
 
     iframe { display: block; width: 100%; border: 0; border-radius: 12px; }
+    iframe.video { aspect-ratio: 16 / 9; height: auto; border-radius: 0; }
 
     .about p + p { margin-top: 1rem; }
     .about a { border-bottom: 1px solid var(--muted); }
+    .about .booking { margin-top: 2.5rem; color: var(--muted); }
+    .about .booking a { color: var(--text); text-transform: none; letter-spacing: 0.02em; font-size: 13px; }
 
     footer {
       display: flex;
@@ -100,8 +103,8 @@
   <main>
     <header class="home">
       <div class="frame">
-        <!-- Placeholder: Spotify artist image. Swap for your own photo, e.g. <img src="photo.jpg" ...> -->
-        <img src="https://i.scdn.co/image/ab676161000051741bfca3f3deed47427d2351ab" alt="Lil Baby Grand">
+        <!-- Same image as the Spotify profile photo (640px version) -->
+        <img src="https://i.scdn.co/image/ab6761610000e5eb1bfca3f3deed47427d2351ab" alt="Lil Baby Grand">
       </div>
       <nav class="nav caps">
         <a href="#music">Music</a>
@@ -124,8 +127,10 @@
 
     <section id="video">
       <h2 class="caps">Video</h2>
-      <!-- Swap in a featured video: <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" style="aspect-ratio:16/9" allowfullscreen title="..."></iframe> -->
-      <p><a class="caps" href="https://youtube.com/channel/UCK6FF8pkp-vK4VMCquYP3rQ">Watch on YouTube &rarr;</a></p>
+      <iframe class="video" src="https://www.youtube-nocookie.com/embed/iv1MJ4Ods9w" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="DtMF (soft piano version)"></iframe>
+      <div class="platforms caps">
+        <a href="https://www.youtube.com/channel/UCK6FF8pkp-vK4VMCquYP3rQ">More on YouTube &rarr;</a>
+      </div>
     </section>
 
     <section id="about" class="about">
@@ -133,6 +138,7 @@
       <p>Lil Baby Grand is a pianist, producer, and songwriter, best known for his piano reimaginings of Latin music (most famously, the viral &ldquo;DtMF - piano version&rdquo;).</p>
       <p>His production and songwriting work includes &ldquo;MONSTRUO&rdquo; with Tainy and Feid, &ldquo;Ballerina&rdquo; by Rema, Skillibeng, Silent Addy, and Disco Neil, and a trio of credits on Tainy&rsquo;s Grammy-nominated album <i>DATA</i>.</p>
       <p>When he&rsquo;s not playing the piano, he&rsquo;s a PhD student at NYU Stern, studying creativity and the music industry. <a href="https://pjm9814.github.io/">Research &rarr;</a></p>
+      <p class="caps booking">Booking &mdash; <a href="mailto:business.lilbabygrand@gmail.com">business.lilbabygrand@gmail.com</a></p>
     </section>
   </main>
 
@@ -140,7 +146,7 @@
     <div class="social caps">
       <a href="https://www.instagram.com/lilbabygrand">Instagram</a>
       <a href="https://www.tiktok.com/@lilbabygrand/">TikTok</a>
-      <a href="https://youtube.com/channel/UCK6FF8pkp-vK4VMCquYP3rQ">YouTube</a>
+      <a href="https://www.youtube.com/channel/UCK6FF8pkp-vK4VMCquYP3rQ">YouTube</a>
       <a href="https://open.spotify.com/artist/18Cgc3wh2bCEW8HzEz3db3">Spotify</a>
     </div>
     <div class="caps">&copy; 2026 Lil Baby Grand</div>
