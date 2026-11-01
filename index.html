@@ -50,11 +50,14 @@
     }
 
     .wordmark {
-      font-size: 15px;
+      /* Sized to run slightly wider than the photo frame, min(440px, 78vw) */
+      font-size: min(38px, 6.8vw);
       font-weight: 500;
+      line-height: 1;
+      white-space: nowrap;
       text-transform: uppercase;
-      letter-spacing: 0.42em;
-      text-indent: 0.42em; /* balances the trailing letter-space so it centers */
+      letter-spacing: 0.3em;
+      text-indent: 0.3em; /* balances the trailing letter-space so it centers */
       color: var(--accent);
       opacity: 0;
       animation: fade 1.6s ease 0.1s forwards;
