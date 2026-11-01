@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lil Baby Grand — Press Kit</title>
+  <meta name="description" content="Press kit for Lil Baby Grand: bio, credits, numbers, photos and booking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000;
+      --text: #f2f2f2;
+      --muted: #8a8a8a;
+      --rule: #262626;
+      --frame: #f4f1ea;
+    }
+
+    * { box-sizing: border-box; margin: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--muted); }
+
+    .caps {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 11px;
+    }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 0;
+      color: var(--muted);
+    }
+
+    /* Intro: framed photo beside the name */
+    .intro {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 2.5rem;
+      align-items: end;
+      padding: 10vh 0 0;
+    }
+    .photo { display: block; width: 100%; height: auto; }
+    h1 { font-size: 28px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.2; }
+    .intro .caps { color: var(--muted); margin-top: 0.75rem; }
+
+    section { padding-top: 12vh; }
+    section h2 { color: var(--muted); font-weight: 400; margin-bottom: 1.75rem; }
+
+    .bio p + p { margin-top: 1rem; }
+
+    /* Numbers */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--rule);
+      border-left: 1px solid var(--rule);
+    }
+    .stat {
+      padding: 1.25rem 1rem 1.1rem;
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+    .stat .n { font-size: 26px; font-weight: 500; line-height: 1.2; font-variant-numeric: tabular-nums; }
+    .stat .l { color: var(--muted); margin-top: 0.4rem; font-size: 10px; line-height: 1.5; }
+    .note { color: var(--muted); margin-top: 1rem; font-size: 10px; }
+
+    /* Lists: credits and tracks */
+    .list { list-style: none; padding: 0; border-top: 1px solid var(--rule); }
+    .list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .list .meta { color: var(--muted); text-align: right; flex-shrink: 0; }
+    .list .sub { color: var(--muted); display: block; }
+    .list .nested { padding-left: 1.5rem; }
+
+    .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; }
+    .contact a { border-bottom: 1px solid var(--muted); }
+
+    footer { padding: 16vh 0 3rem; text-align: center; color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .intro { grid-template-columns: 1fr; gap: 1.75rem; padding-top: 4vh; }
+      .photo { width: 75%; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .stat .n { font-size: 22px; }
+      .list li { flex-direction: column; gap: 0.15rem; }
+      .list .meta { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="top caps">
+      <a href="../">&larr; Lil Baby Grand</a>
+      <span>Press kit</span>
+    </nav>
+
+    <header class="intro">
+      <img class="photo" src="press-photo.jpg" alt="Lil Baby Grand, portrait among green leaves on Kodak Portra film">
+      <div>
+        <h1>Lil Baby Grand</h1>
+        <p class="caps">Pianist &middot; Producer &middot; Songwriter</p>
+      </div>
+    </header>
+
+    <section class="bio">
+      <h2 class="caps">Bio</h2>
+      <p>Lil Baby Grand is a pianist, producer, and songwriter. A former classical concert pianist, he went viral for his piano reimaginings of reggaeton hits (most famously, &ldquo;DtMF - piano version&rdquo;), catching the attention of artists including Bad Bunny, Maluma, and Jhay Cortez.</p>
+      <p>His breakthrough as a producer came with three writer/producer credits on Tainy&rsquo;s <i>DATA</i>, including &ldquo;mañana&rdquo; with Young Miko and The Marías. The album earned a Grammy nomination and placed 3rd on Billboard&rsquo;s 100 Best Albums of 2023. His credits also include &ldquo;MONSTRUO&rdquo; (Tainy, Feid) and &ldquo;Ballerina&rdquo; (Rema, Skillibeng, Silent Addy, Disco Neil).</p>
+      <p>His current projects span Latin urban, dancehall, afrobeats, electronic, R&amp;B, classical, and jazz. Across artist, producer, and writer credits, his catalog has drawn roughly 250 million streams, and videos using his music have been viewed more than 7 billion times across TikTok, Instagram, and Facebook.</p>
+    </section>
+
+    <section>
+      <h2 class="caps">By the numbers</h2>
+      <div class="stats">
+        <div class="stat"><div class="n">250M</div><div class="l caps">Catalog streams (artist, producer &amp; writer)</div></div>
+        <div class="stat"><div class="n">6.6B+</div><div class="l caps">Instagram &amp; Facebook video views</div></div>
+        <div class="stat"><div class="n">1B+</div><div class="l caps">TikTok video views</div></div>
+        <div class="stat"><div class="n">125M+</div><div class="l caps">Streams of &ldquo;mañana&rdquo;</div></div>
+        <div class="stat"><div class="n">16M+</div><div class="l caps">Spotify streams as an artist</div></div>
+        <div class="stat"><div class="n">4.4M</div><div class="l caps">Streams of &ldquo;DtMF - piano version&rdquo;</div></div>
+        <div class="stat"><div class="n">208K</div><div class="l caps">Spotify monthly listeners</div></div>
+        <div class="stat"><div class="n">131K</div><div class="l caps">TikTok followers</div></div>
+        <div class="stat"><div class="n">58K</div><div class="l caps">Instagram followers</div></div>
+      </div>
+      <p class="note caps">As of November 2026</p>
+    </section>
+
+    <section>
+      <h2 class="caps">Selected credits</h2>
+      <ul class="list">
+        <li><span><i>DATA</i> <span class="sub">Tainy &middot; Grammy-nominated &middot; #3 on Billboard&rsquo;s 100 Best Albums of 2023</span></span><span class="meta caps">3 writer/producer credits</span></li>
+        <li class="nested"><span>&#8627; mañana <span class="sub">Tainy, Young Miko, The Marías &middot; 125M+ streams</span></span><span class="meta caps">Co-production, co-writing</span></li>
+        <li><span>MONSTRUO <span class="sub">Tainy, Feid</span></span><span class="meta caps">Production, songwriting</span></li>
+        <li><span>Ballerina <span class="sub">Rema, Skillibeng, Silent Addy, Disco Neil</span></span><span class="meta caps">Production, songwriting</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="caps">Top tracks</h2>
+      <ul class="list">
+        <li><span>DtMF - piano version</span><span class="meta">4.4M streams</span></li>
+        <li><span>DTMF - piano + violin version <span class="sub">with brenden &lt;3</span></span><span class="meta">448K streams</span></li>
+        <li><span>BAILE INoLVIDABLE - piano version</span><span class="meta">415K streams</span></li>
+        <li><span>PERFuMITO NUEVO - piano version</span><span class="meta">391K streams</span></li>
+        <li><span>Neverita</span><span class="meta">290K streams</span></li>
+      </ul>
+      <p class="note caps">Spotify, all-time</p>
+    </section>
+
+    <section>
+      <h2 class="caps">Photos</h2>
+      <p class="links caps">
+        <a href="press-photo.jpg" download="Lil-Baby-Grand-press-photo.jpg">Download press photo &darr;</a>
+      </p>
+      <p class="note caps">High-resolution photos available on request</p>
+    </section>
+
+    <section>
+      <h2 class="caps">Listen &amp; follow</h2>
+      <p class="links caps">
+        <a href="https://open.spotify.com/artist/18Cgc3wh2bCEW8HzEz3db3">Spotify</a>
+        <a href="https://music.apple.com/us/artist/lil-baby-grand/1564847643">Apple Music</a>
+        <a href="https://www.youtube.com/channel/UCK6FF8pkp-vK4VMCquYP3rQ">YouTube</a>
+        <a href="https://www.instagram.com/lilbabygrand">Instagram</a>
+        <a href="https://www.tiktok.com/@lilbabygrand/">TikTok</a>
+      </p>
+    </section>
+
+    <section class="contact">
+      <h2 class="caps">Booking &amp; press</h2>
+      <p><a href="mailto:business.lilbabygrand@gmail.com">business.lilbabygrand@gmail.com</a></p>
+    </section>
+
+    <footer class="caps">&copy; 2026 Lil Baby Grand</footer>
+  </div>
+</body>
+</html>
